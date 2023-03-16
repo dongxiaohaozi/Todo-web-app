@@ -1,0 +1,18 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/central' }
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:30.0-jre'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+    runtimeOnly 'mysql:mysql-connector-java:8.0.22'
+}
+
+application {
+    mainClass = 'tw.cn.cap.gtb.todo.TodoApp'
+}

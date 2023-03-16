@@ -1,0 +1,36 @@
+{
+  "name": "assignment-todo-js",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "vite --port 1234",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --fix src/**/*.js",
+    "test": "cypress run --headless",
+    "test:e2e": "cypress run --headless --env scene=e2e",
+    "test:open": "cypress open",
+    "test:open:e2e": "cypress open --env scene=e2e",
+    "server": "json-server --watch json-server/api.json -p 8080"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "json-server": "^0.16.3",
+    "prettier": "^2.4.1",
+    "vite": "^3.2.3"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.8.2"
+  }
+}
